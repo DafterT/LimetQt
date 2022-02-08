@@ -1,7 +1,8 @@
-#include <QCoreApplication>
+#include <QTextStream>
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-    return a.exec();
+    QTextStream out(stdout);
+    out << "Hello world\n";
+    return 0;
 }
