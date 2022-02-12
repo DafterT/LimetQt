@@ -5,6 +5,11 @@ Plank::Plank(int height, int width, int price)
 {
 }
 
+bool Plank::checkCorrect() const
+{
+    return height > 0 && width > 0 && price > 0;
+}
+
 int Plank::getHeight() const
 {
     return height;

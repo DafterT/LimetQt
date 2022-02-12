@@ -9,7 +9,8 @@ CONFIG -= app_bundle
 
 SOURCES += \
         main.cpp \
-        plank.cpp
+        plank.cpp \
+        positionedplank.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -17,4 +18,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    plank.h
+    plank.h \
+    positionedplank.h

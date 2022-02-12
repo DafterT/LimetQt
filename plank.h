@@ -15,6 +15,7 @@ class Plank
     int getPrice() const;
     int getWidth() const;
     int getHeight() const;
+    bool checkCorrect() const;
 };
 
 #endif  // PLANK_H
