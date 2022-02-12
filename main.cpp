@@ -1,11 +1,12 @@
 #include <QTextStream>
 #include "plank.h"
 #include "positionedplank.h"
+#include <QTest>
+#include "test_plank.h"
 
-int main()
+int main(int argc, char* argv[])
 {
     QTextStream out(stdout);
-    PositionedPlank* a = new PositionedPlank(17, 5, 4, 15, 1);
-    out << a->include(24) << "\n";
+    QTest::qExec(new Test_Plank, argc, argv);
     return 0;
 }

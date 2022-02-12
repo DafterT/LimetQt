@@ -1,3 +1,4 @@
+QT += testlib
 QT -= gui
 
 CONFIG += c++11 console
@@ -10,7 +11,8 @@ CONFIG -= app_bundle
 SOURCES += \
         main.cpp \
         plank.cpp \
-        positionedplank.cpp
+        positionedplank.cpp \
+        test_plank.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -19,4 +21,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     plank.h \
-    positionedplank.h
+    positionedplank.h \
+    test_plank.h
