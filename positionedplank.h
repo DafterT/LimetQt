@@ -11,6 +11,7 @@ class PositionedPlank : public Plank
 
   public:
     PositionedPlank(int x, int y, int height, int width, int price);
+    bool checkCorrect() const;
     int getX() const;
     int getY() const;
     bool include(int radius) const;
