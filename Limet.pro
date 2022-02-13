@@ -12,7 +12,7 @@ SOURCES += \
         main.cpp \
         plank.cpp \
         positionedplank.cpp \
-        test_plank.cpp
+        test_positionedplank.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -22,4 +22,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     plank.h \
     positionedplank.h \
-    test_plank.h
+    test_positionedplank.h

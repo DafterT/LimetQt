@@ -2,11 +2,12 @@
 #include "plank.h"
 #include "positionedplank.h"
 #include <QTest>
-#include "test_plank.h"
+#include "test_positionedplank.h"
 
 int main(int argc, char* argv[])
 {
     QTextStream out(stdout);
-    QTest::qExec(new Test_Plank, argc, argv);
+    // Тест для класса Plank
+    QTest::qExec(new Test_PositionedPlank, argc, argv);
     return 0;
 }
